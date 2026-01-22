@@ -37,25 +37,5 @@ Todo esto corre sobre **Java 17** (o superior).
 * **Almacenamiento de Imágenes:** **Firebase Cloud Storage** (o AWS S3). Esto es obligatorio porque *no* podemos guardar las imágenes en la base de datos.
 * **Contenedores:** Docker.
 
-## Creación del proyecto
-
-### Backend
-1. Para crear la estrctuctura de carpetas del proyecto utilizó la página: <https://start.spring.io/>, la cual permite generar la estructura de carpetas del proyecto y agregar las dependencias necesarias.
-2. Al momento de crear el proyecto se usó Spring Boot *3.5.9*, Java *17*, YAML y Maven *4.0.0*.
-3. Después de descargar el comprimido, se utilizó el IDE Antigravity de Google para configurar y abrir el proyecto.
-4. Se configura el pom añadiendo las dependencias necesarias que faltan para el proyecto.
-5. Se agregan las carpetas para las clases y entidades que se van a utilizar en el proyecto.
-    1. *Controller:* Aquí irán las APIs REST (los que reciben las peticiones del Front).
-    2. *Domain:* Aquí irán las Entidades (Tablas de la BD).
-    3. *Repository:* Aquí irán las interfaces que guardan datos en PostgreSQL.
-    4. *Service:* Aquí irá la lógica de negocio (validaciones, cálculos).
-    5. *Dto:* Aquí irán los objetos "limpios" que se envian al Frontend (sin contraseñas ni datos sensibles).
-    6. *Mapper:* Aquí irán las interfaces de MapStruct para convertir de Entidad a DTO.
-6. Se configuró el archivo application.yaml para la conexión a la base de datos.
-
-### Base de Datos
-1. Se instaló PostgreSQL *17.7*.
-2. Se inicilizó en el puerto *5432*.
-3. Se creó la base de datos llamada `cine_db`.
-4. Se creó el archivo `tables.sql` para crear las tablas en la base de datos.
-5. Se crearon las tablas denotadas en el MER para el proyecto.
+## Prueba de APIs
+Una vez iniciado el proyecto para probar directamente las APIs, se puede ingresar al enlace <http://localhost:8080/swagger-ui/index.html>, el cual contiene todas las APIs implementadas e indica lo que requiere cada API para ser probada, este devuelve el resultado de la operación y el status.
