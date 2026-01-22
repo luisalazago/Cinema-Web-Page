@@ -51,9 +51,11 @@ Todo esto corre sobre **Java 17** (o superior).
     4. *Service:* Aquí irá la lógica de negocio (validaciones, cálculos).
     5. *Dto:* Aquí irán los objetos "limpios" que se envian al Frontend (sin contraseñas ni datos sensibles).
     6. *Mapper:* Aquí irán las interfaces de MapStruct para convertir de Entidad a DTO.
+6. Se configuró el archivo application.yaml para la conexión a la base de datos.
 
 ### Base de Datos
 1. Se instaló PostgreSQL *17.7*.
 2. Se inicilizó en el puerto *5432*.
 3. Se creó la base de datos llamada `cine_db`.
-4. 
+4. Se creó el archivo `tables.sql` para crear las tablas en la base de datos.
+5. Se crearon las tablas denotadas en el MER para el proyecto.
