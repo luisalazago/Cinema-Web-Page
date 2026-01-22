@@ -1,2 +1,4 @@
 *.zip
-*.yaml
+
+# Ignorar configuraciones locales
+src/main/resources/application.yml
