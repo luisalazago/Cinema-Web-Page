@@ -26,3 +26,17 @@ VALUES (
     'https://image.tmdb.org/t/p/w500/qNBAXBIQlnOzlqNB9vYvS6A7R_W.jpg', true, 'Animación', 
     'G', 'Un fontanero llamado Mario viaja a través de un laberinto subterráneo con su hermano para salvar a una princesa capturada.'
 );
+
+-- 1. Ciudades
+INSERT INTO Ciudad (id, nombre) VALUES 
+('cali-01', 'Cali'),
+('bog-02', 'Bogotá');
+
+-- 2. Teatros
+INSERT INTO Teatro (id, id_ciudad, nombre, direccion) VALUES 
+('t-unicali', 'cali-01', 'Cine Colombia Unicentro', 'Calle 5 # 100-110'),
+('t-andino', 'bog-02', 'Cine Andino', 'Carrera 11 # 82-71');
+
+-- 3. Funciones (Relaciona Película + Teatro + Horario)
+INSERT INTO Funcion (id, id_pelicula, id_teatro, fecha, hora, precio, sillas_disponibles) VALUES 
+('f-001', 'b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q7', 't-unicali', '2026-01-25', '18:30:00', 15000, 50);
