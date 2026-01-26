@@ -14,3 +14,24 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Ports and Tests
+To run the project individually, you can use **Docker** to generate an image and a container, or you can follow the commands below.
+
+If you are running the project for the first time, use the following command to install the dependencies:
+
+```bash
+npm install
+```
+
+Then, use the following command to start the frontend in the development environment:
+
+```bash
+npm run dev
+```
+
+Note that this section specifically covers the frontend; the port used to run it is `5173`. To check the status of the application while it is running, navigate to:
+
+```
+http://localhost:5173/
+```
