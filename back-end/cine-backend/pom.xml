@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.cinedigital</groupId>
 	<artifactId>cine-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>cine-backend</name>
 	<description>MVP para sistema de venta de  entradas de cine.</description>
 	<url/>

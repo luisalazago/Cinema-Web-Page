@@ -108,7 +108,22 @@ INSERT INTO Teatro (id, id_ciudad, nombre, direccion) VALUES
 
 -- 3. Funciones (Relaciona Película + Teatro + Horario)
 INSERT INTO Funcion (id, id_pelicula, id_teatro, fecha, hora, precio, sillas_disponibles) VALUES 
-('f-001', 'b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q7', 't-unicali', '2026-01-25', '18:30:00', 15000, 50);
+(
+	'f-001', 
+	'b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q7', 
+	't-unicali', '2026-01-25', 
+	'18:30:00', 
+	15000, 
+	50
+),
+(
+	'f-002', 
+	'e5f6g7h8-i9j0-1k2l-3m4n-o5p6q7r8s9t0', 
+	't-unicali', '2026-01-25', 
+	'18:30:00', 
+	15000, 
+	2
+);
 
 INSERT INTO Usuario (id, nombres, correo, celular, password, activo, tipo_usuario) 
 VALUES (

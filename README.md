@@ -75,6 +75,12 @@ docker-compose down
 docker-compose down -v
 ```
 
+And if you are going to run the same images without fix or change something in the project, use the next command to run the existing docker images (it is faster):
+
+```bash
+docker-compose up
+```
+
 ## Author and Specifications
 
 For more information regarding the project context and official documentation on how to run each section, check the `HELP.md` files at `/back-end/cine-backend/HELP.md` and `/front-end/cine-frontend/HELP.md`.
